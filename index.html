@@ -940,7 +940,7 @@
       line-height: 1;
       position: absolute;
       top: 16px;
-      left: 20px;
+      right: 20px;
       font-family: 'Cairo', sans-serif;
     }
 
@@ -1100,15 +1100,17 @@
     .pkg-card.featured::before {
       content: '⭐ الأكثر طلباً';
       position: absolute;
-      top: 16px;
-      left: -32px;
+      top: 18px;
+      left: -36px;
       background: var(--gold);
       color: var(--navy);
       font-size: 10px;
       font-weight: 700;
-      padding: 5px 40px;
-      transform: rotate(0deg);
+      padding: 5px 50px;
+      transform: rotate(-45deg);
       border-radius: 0;
+      white-space: nowrap;
+      z-index: 1;
     }
 
     /* ── PROCESS ── */
@@ -1660,12 +1662,11 @@
       <div class="problem-card" style="transition-delay:0.3s">
         <div class="problem-icon">🗂️</div>
         <div class="problem-title">ملفات غير منظمة وغير جاهزة</div>
-        <div class="problem-desc">ملفات الموظفين المبعثرة تُشكّل خطراً كبيراً عند التفتيش أو السعي للحصول على اعتماد
-          سيباهي</div>
+        <div class="problem-desc">ملفات غير مكتملة أو غير منظمة تُعرّض منشأتك لعقوبات في حال التفتيش من الجهات الحكومية</div>
       </div>
       <div class="problem-card" style="transition-delay:0.4s">
         <div class="problem-icon">💸</div>
-        <div class="problem-title">تكلفة مدير HR مرتفعة</div>
+        <div class="problem-title">تكلفة توظيف موظف داخلي أخر بقسم الموارد البشريه</div>
         <div class="problem-desc">تكلفة توظيف موظف اخر بقسم موارد بشرية بدوام كامل تثقل كاهل الميزانية بينما المنشأة في
           طور
           النمو</div>
@@ -1793,19 +1794,21 @@
   <section class="why" id="why">
     <div class="section-tag reveal">لماذا مسار؟</div>
     <h2 class="section-title reveal">الخيار الأذكى لمنشأتك</h2>
+    <p class="section-sub reveal">ستة أسباب تجعل مسار الشريك الأمثل لإدارة موارد منشأتك البشرية</p>
     <div class="why-grid">
       <div class="why-card" style="transition-delay:0.1s">
         <div class="why-number">01</div>
         <div class="why-icon">💰</div>
         <div class="why-title">وفّر ما بين 60٪ إلى 80٪</div>
-        <div class="why-desc">تكلفة خدمتنا جزء بسيط من تكلفة توظيف مدير HR داخلي بدوام كامل — مع نفس المستوى الاحترافي
+        <div class="why-desc">تكلفة خدمتنا جزء بسيط من تكلفة توظيف موظف HR داخلي بدوام كامل — مع نفس المستوى الاحترافي
           أو أعلى</div>
       </div>
       <div class="why-card" style="transition-delay:0.2s">
         <div class="why-number">02</div>
         <div class="why-icon">⚖️</div>
         <div class="why-title">الامتثال الكامل للأنظمة</div>
-        <div class="why-desc">كل ما نُعدّه متوافق 100٪ مع نظام العمل السعودي — لا غرامات، لا مخاطر قانونية، لا قلق</div>
+        <div class="why-desc">كل ما نُعدّه متوافق 100٪ مع نظام العمل السعودي — لا غرامات، لا مخاطر قانونية، لا قلق , مدربه معتمده من المؤسسة العامه للتدريب التقني والمهني </div>
+
       </div>
       <div class="why-card" style="transition-delay:0.3s">
         <div class="why-number">03</div>
@@ -1817,7 +1820,7 @@
         <div class="why-number">04</div>
         <div class="why-icon">🏥</div>
         <div class="why-title">خبرة حصرية بسيباهي</div>
-        <div class="why-desc">تطبيق عملي واقعي لمعايير سيباهي — ميزة تنافسية حقيقية لا تجدها لدى معظم مستشاري HR</div>
+        <div class="why-desc">تطبيق عملي واقعي لمعايير سيباهي ( للقاطع الطبي ) — ميزة تنافسية حقيقية لا تجدها لدى معظم مستشاري HR</div>
       </div>
       <div class="why-card" style="transition-delay:0.5s">
         <div class="why-number">05</div>
@@ -1830,8 +1833,7 @@
         <div class="why-number">06</div>
         <div class="why-icon">🔒</div>
         <div class="why-title">سرية تامة ومصداقية عالية</div>
-        <div class="why-desc">خبرة 10 سنوات معتمدة من المؤسسة العامة للتدريب التقني والمهني — بيانات منشأتك في أيدٍ
-          أمينة</div>
+        <div class="why-desc">بيانات منشأتك في أيدٍ أمينة</div>
       </div>
     </div>
   </section>
@@ -1846,31 +1848,35 @@
       <div class="pkg-card" style="transition-delay:0.1s">
         <div class="pkg-badge" style="background:rgba(46,125,50,0.15);color:#66bb6a;">مثالية للبداية</div>
         <div class="pkg-name">باقة التأسيس</div>
-        <div class="pkg-price">٢,٥٠٠ – ٣,٠٠٠</div>
+        <div class="pkg-price">2,500</div>
         <div class="pkg-period">ريال / شهر + الضريبة</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li><span>✓</span> وصف وظيفي لحتى ٥ وظائف</li>
+          <li><span>✓</span> وصف وظيفي لحتى 16 وظائف</li>
           <li><span>✓</span> عقود عمل احترافية</li>
           <li><span>✓</span> تنظيم الملفات إلكترونياً</li>
-          <li><span>✓</span> احتساب الإجازات والأوقات الإضافية</li>
+          <li><span>✓</span> احتساب الإجازات وساعات الإضافية</li>
           <li><span>✓</span> جلسة استشارية شهرية</li>
+          <li><span>✓</span> إدارة مخالصات نهاية الخدمة</li>
+          <li><span>✓</span> إدارة الرواتب والإجازات وساعات العمل الإضافي</li>
         </ul>
         <a href="https://wa.me/966558946287" class="pkg-btn pkg-btn-outline" target="_blank">تواصل معنا</a>
       </div>
 
       <div class="pkg-card featured" style="transition-delay:0.2s">
-        <div class="pkg-badge" style="background:rgba(201,168,76,0.15);color:var(--gold);">⭐ الأكثر طلباً</div>
+        <div class="pkg-badge" style="background:rgba(201,168,76,0.15);color:var(--gold);">الأكثر طلباً</div>
         <div class="pkg-name">باقة التشغيل</div>
-        <div class="pkg-price">٤,٠٠٠ – ٥,٠٠٠</div>
+        <div class="pkg-price">3,000</div>
         <div class="pkg-period">ريال / شهر + الضريبة</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
-          <li><span>✓</span> وصف وظيفي لحتى ٧ وظائف</li>
+          <li><span>✓</span> وصف وظيفي لحتى 30 وظائف</li>
           <li><span>✓</span> نماذج الموارد البشرية الأساسية</li>
           <li><span>✓</span> استقطاب وتوظيف</li>
           <li><span>✓</span> عقود واتفاقيات تدريب</li>
           <li><span>✓</span> استشارتان شهرياً</li>
+          <li><span>✓</span> إدارة الرواتب والإجازات وساعات العمل الإضافي</li>
+          <li><span>✓</span> إدارة مخالصات نهاية الخدمة</li>
         </ul>
         <a href="https://wa.me/966558946287" class="pkg-btn pkg-btn-solid" target="_blank">ابدأ الآن</a>
       </div>
@@ -1878,15 +1884,15 @@
       <div class="pkg-card" style="transition-delay:0.3s">
         <div class="pkg-badge" style="background:rgba(26,107,154,0.15);color:#64b5f6;">للقطاع الصحي</div>
         <div class="pkg-name">باقة سيباهي</div>
-        <div class="pkg-price">٤,٠٠٠ – ٦,٠٠٠</div>
+        <div class="pkg-price">4,000</div>
         <div class="pkg-period">ريال / شهر + الضريبة</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
           <li><span>✓</span> ثلاث زيارات إشرافية شهرياً</li>
-          <li><span>✓</span> تدريب فريق HR على سيباهي</li>
           <li><span>✓</span> نماذج سيباهي المتخصصة</li>
           <li><span>✓</span> مراجعة وتدقيق الملفات</li>
           <li><span>✓</span> تقرير شهري تفصيلي</li>
+          <li><span>✓</span> تدريب فريق الموارد البشرية على معايير سيباهي الخاصة بملفات الموظفين</li>
         </ul>
         <a href="https://wa.me/966558946287" class="pkg-btn pkg-btn-outline" target="_blank">تواصل معنا</a>
       </div>
@@ -1894,61 +1900,20 @@
       <div class="pkg-card" style="transition-delay:0.4s">
         <div class="pkg-badge" style="background:rgba(107,63,160,0.15);color:#ce93d8;">الحزمة الشاملة</div>
         <div class="pkg-name">باقة التمييز</div>
-        <div class="pkg-price">٨,٠٠٠ – ١٠,٠٠٠</div>
+        <div class="pkg-price">4,500</div>
         <div class="pkg-period">ريال / شهر + الضريبة</div>
         <div class="pkg-divider"></div>
         <ul class="pkg-features">
+          <li><span>✓</span> عدد الموظفين اقل من 60 موظف</li>
           <li><span>✓</span> كل ما في الباقات السابقة</li>
           <li><span>✓</span> سياسات وإجراءات HR شاملة</li>
-          <li><span>✓</span> إشراف على ملفات سيباهي</li>
+          <li><span>✓</span> مراجعة ملفات الموظفين للتأكد من الالتزام بمعايير سيباهي</li>
           <li><span>✓</span> استشارات غير محدودة</li>
-          <li><span>✓</span> دعم أولوية مع متابعة مستمرة</li>
         </ul>
         <a href="https://wa.me/966558946287" class="pkg-btn pkg-btn-outline" target="_blank">تواصل معنا</a>
       </div>
-    </div>
 
-    <!-- Additional Service Notice -->
-    <div style="
-      margin-top: 48px;
-      padding: 22px 36px;
-      background: linear-gradient(135deg, rgba(201,168,76,0.13), rgba(201,168,76,0.05));
-      border: 1.5px solid rgba(201,168,76,0.45);
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      max-width: 860px;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 8px 32px rgba(201,168,76,0.10);
-    ">
-      <div style="
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-        border-radius: 50%;
-        background: var(--gold);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 22px;
-        color: var(--navy);
-        font-weight: 900;
-        box-shadow: 0 4px 16px rgba(201,168,76,0.35);
-      ">💡</div>
-      <p style="
-        font-size: 16px;
-        font-weight: 600;
-        color: var(--gold2);
-        line-height: 1.9;
-        margin: 0;
-        text-align: right;
-      ">
-        أضف على الباقة <span style="color:var(--gold);font-weight:900;font-size:18px;">1,000 ريال</span> للحصول على خدمة تنفيذ إجراء عملية المخالصات حسب طبيعة نوع إنهاء العلاقة التعاقدية
-      </p>
     </div>
-
   </section>
 
   <!-- PROCESS -->
