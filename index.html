@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مسار HR | خدمات الموارد البشرية</title>
+  <title>مسارات مضيئة | خدمات الموارد البشرية</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap"
@@ -103,7 +103,7 @@
 
     .nav-logo {
       font-family: 'Cairo', sans-serif;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 900;
       color: var(--gold);
       letter-spacing: 1px;
@@ -965,6 +965,60 @@
       line-height: 1.8;
     }
 
+    /* ── PARTNERS ── */
+    .partners {
+      background: var(--navy2);
+    }
+
+    .partners-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 32px;
+      margin-top: 60px;
+    }
+
+    .partner-card {
+      background: var(--navy3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 36px 40px;
+      width: 240px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+      transition: all 0.4s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .partner-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .partner-card:hover {
+      transform: translateY(-6px) !important;
+      border-color: rgba(201, 168, 76, 0.15);
+    }
+
+    .partner-logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: #fff;
+      padding: 8px;
+    }
+
+    .partner-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--white);
+      text-align: center;
+    }
+
     /* ── PACKAGES ── */
     .packages {
       background: var(--navy);
@@ -1424,6 +1478,14 @@
       .packages-grid {
         grid-template-columns: 1fr;
       }
+
+      .nav-logo {
+        font-size: 18px;
+      }
+
+      .loader-logo {
+        font-size: 26px;
+      }
     }
 
     /* ── WHATSAPP FLOAT ── */
@@ -1491,7 +1553,7 @@
     }
 
     .loader-logo {
-      font-size: 48px;
+      font-size: 36px;
       font-weight: 900;
       color: var(--gold);
       margin-bottom: 8px;
@@ -1543,8 +1605,8 @@
   <!-- LOADER -->
   <div class="loader" id="loader">
     <div class="loader-inner">
-      <div class="loader-logo">مسار</div>
-      <div style="font-size:12px;color:rgba(255,255,255,0.3);letter-spacing:4px;">HR</div>
+      <div class="loader-logo">مسارات مضيئة</div>
+      <div style="font-size:12px;color:rgba(255,255,255,0.3);letter-spacing:4px;">MASARAT MUDIYAH</div>
       <div class="loader-bar">
         <div class="loader-progress"></div>
       </div>
@@ -1565,10 +1627,11 @@
 
   <!-- NAV -->
   <nav id="navbar">
-    <div class="nav-logo">مسار <span>HR SOLUTIONS</span></div>
+    <div class="nav-logo">مسارات مضيئة <span>MASARAT MUDIYAH</span></div>
     <ul class="nav-links">
       <li><a href="#problems">التحديات</a></li>
       <li><a href="#services">الخدمات</a></li>
+      <li><a href="#partners">شركاؤنا</a></li>
       <li><a href="#packages">الباقات</a></li>
       <li><a href="#process">كيف نعمل</a></li>
       <li><a href="#contact" class="nav-cta">تواصل معنا</a></li>
@@ -1594,7 +1657,7 @@
         <span class="line">لا تواكبه؟</span>
       </h1>
       <p class="hero-sub">
-        مسار تتولى مواردك البشرية بالكامل — عقوداً، سياسات، توظيفاً، وامتثالاً — بتكلفة تناسب حجم منشأتك الصغيرة
+        مسارات مضيئة تتولى مواردك البشرية بالكامل — عقوداً، سياسات، توظيفاً، وامتثالاً — بتكلفة تناسب حجم منشأتك الصغيرة
         والناشئة.
       </p>
       <div class="hero-actions">
@@ -1690,7 +1753,7 @@
       <div class="problem-solution">
         <div class="solution-check">✓</div>
         <div class="solution-text">
-          <h3>مسار تحل هذا كله — بدون موظف داخلي، وبدون تعقيد</h3>
+          <h3>مسارات مضيئة تحل هذا كله — بدون موظف داخلي، وبدون تعقيد</h3>
           <p>خدمة احترافية عن بُعد بمرونة تامة وتكلفة تناسب منشأتك</p>
         </div>
       </div>
@@ -1808,9 +1871,9 @@
 
   <!-- WHY US -->
   <section class="why" id="why">
-    <div class="section-tag reveal">لماذا مسار؟</div>
+    <div class="section-tag reveal">لماذا مسارات مضيئة؟</div>
     <h2 class="section-title reveal">الخيار الأذكى لمنشأتك</h2>
-    <p class="section-sub reveal">ستة أسباب تجعل مسار الشريك الأمثل لإدارة موارد منشأتك البشرية</p>
+    <p class="section-sub reveal">ستة أسباب تجعل مسارات مضيئة الشريك الأمثل لإدارة موارد منشأتك البشرية</p>
     <div class="why-grid">
       <div class="why-card" style="transition-delay:0.1s">
         <div class="why-number">01</div>
@@ -1850,6 +1913,23 @@
         <div class="why-icon">🔒</div>
         <div class="why-title">سرية تامة ومصداقية عالية</div>
         <div class="why-desc">بيانات منشأتك في أيدٍ أمينة</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners" id="partners">
+    <div class="section-tag reveal">شركاؤنا</div>
+    <h2 class="section-title reveal">يثقون بنا</h2>
+    <p class="section-sub reveal">نفخر بشراكتنا مع نخبة من المنشآت التي تثق بنا لإدارة مواردها البشرية</p>
+    <div class="partners-grid">
+      <div class="partner-card reveal" style="transition-delay:0.1s">
+        <img class="partner-logo" src="image/partner-classy-clean.jpeg" alt="Classy Clean">
+        <div class="partner-name">Classy Clean</div>
+      </div>
+      <div class="partner-card reveal" style="transition-delay:0.2s">
+        <img class="partner-logo" src="image/partner-soiree-beauty.jpeg" alt="Soirée Beauty Center">
+        <div class="partner-name">Soirée Beauty Center</div>
       </div>
     </div>
   </section>
@@ -1974,10 +2054,10 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">مسار <span>HR SOLUTIONS</span></div>
+    <div class="footer-logo">مسارات مضيئة <span>MASARAT MUDIYAH</span></div>
     <div class="footer-text">
       معتمدة من المؤسسة العامة للتدريب التقني والمهني<br>
-      © 2025 مسار لخدمات الموارد البشرية
+      © 2025 مسارات مضيئة لخدمات الموارد البشرية
     </div>
     <div class="footer-links">
       <a href="#home">الرئيسية</a>
